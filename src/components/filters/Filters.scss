@@ -1,0 +1,17 @@
+.filters{
+    display: inline-flex;
+    grid-gap: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 20px 0 0;
+    &__item{
+        cursor: pointer;
+        margin: 10px 0;
+    }
+    &__active{
+        color: red;
+        cursor: pointer;
+    }
+}

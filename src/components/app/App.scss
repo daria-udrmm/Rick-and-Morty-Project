@@ -1,0 +1,29 @@
+.container{
+    max-width: 1450px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.app{
+    background-color: rgb(195, 239, 250);
+    padding-top: 25px;
+}
+.social{
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0 40px;
+    }
+}
+.filter{
+    &__delete{
+        box-sizing: border-box;
+        margin: 20px 0;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 160px;
+        width: 100%;
+        cursor: pointer;
+        font-size: 20px;
+    }   
+}
