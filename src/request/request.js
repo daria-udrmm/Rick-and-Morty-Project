@@ -17,7 +17,7 @@ export const useHttp = () => {
                     status: item.status,
                     gender: item.gender,
                     liked: false,
-                    color: '#9dccd8',
+                    color: 'rgba(255, 255, 255, .5)',
                     id: item.id
                 })
             })

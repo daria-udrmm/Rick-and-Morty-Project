@@ -25,13 +25,6 @@ export const heroesFetchingError = () => {
     }
 }
 
-export const heroesSetLike = (id) => {
-    return {
-        type: 'HEROES_SET_LIKE',
-        payload: id
-    }
-}
-
 export const activeFilteredChange = (filter) => {
     return {
         type: 'ACTIVE_FILTER_CHANGE',
