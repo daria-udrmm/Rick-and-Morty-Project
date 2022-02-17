@@ -1,9 +1,7 @@
 export const fetchHeroes = (request) => (dispatch) => {
     dispatch(heroesFetching());
     request('https://rickandmortyapi.com/api/character')
-        // .then(data => console.log(data))
         .then(data => dispatch(heroesFetched(data)))
-        // .catch(() => dispatch(heroesFetchingError()))
 }
 
 export const heroesFetching = () => {
