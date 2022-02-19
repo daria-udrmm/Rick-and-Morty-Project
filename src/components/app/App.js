@@ -8,6 +8,7 @@ import Filters from '../filters/Filters';
 import Search from '../search/Search';
 import PostsList from '../postsList/PostsList';
 import Popup from '../popup/Popup';
+import DeleteFilters from '../deleteFilters/DeleteFiltes';
 
 
 const App = () => {
@@ -19,18 +20,14 @@ const App = () => {
 
     useEffect(() => {
         dispatch(fetchHeroes(request));
-    }, [])
+    }, []);
 
     return (
         <main className="app">
             <div className="container">
                 <Filters/>
                 <Search/>
-                <div
-                    className='filter__delete'
-                    onClick={() => dispatch(activeFilterDelete())}>
-                    Clear filters
-                </div>
+                <DeleteFilters/>
                 <PostsList/>
                 {activePopup ? <Popup {...popupInfo}/> : null}
             </div>
