@@ -1,7 +1,7 @@
 const initialState = {
     filter: {
         species: ['Human', 'Alien'],
-        gender: ['Male', 'Female', 'unknown'],
+        gender: ['Male', 'Female', 'Genderless', 'unknown'],
         status: ['Alive', 'Dead', 'unknown'],
     },
     activeFilter: {},

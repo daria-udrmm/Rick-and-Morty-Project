@@ -1,0 +1,32 @@
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    max-width: 800px;
+    width: 100%;
+    padding: 25px 40px;
+    box-shadow: 2px 6px 29px 0px rgba(34, 60, 80, 0.2);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    &__name{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    &__description{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    &__close{
+        position: absolute;
+        cursor: pointer;
+        right: 15px;
+        top: 15px;
+        img{
+            max-width: 25px;
+            width: 100%;
+        }
+    }
+}

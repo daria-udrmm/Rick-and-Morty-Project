@@ -4,28 +4,15 @@
         padding: 15px 20px;
         height: 100%;
         position: relative;
-    }
-    &__like{
-        position: absolute;
-        right: 10px;
-        top: 10px;
         cursor: pointer;
     }
     &__image{
         max-width: 100%;
         width: 100%;
-        margin-top: 15px;
     }
     &__title{
         font-weight: 700;
-        margin-bottom: 20px;
-        font-size: 25px;
-        // max-height: 60px;
-        // height: 100%;
-    }
-    &__content{
-        font-size: 20px;
-        max-width: 500px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+        font-size: 22px;
     }
 }

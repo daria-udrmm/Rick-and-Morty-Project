@@ -36,3 +36,15 @@ export const activeFilterDelete = () => {
     }
 }
 
+export const popupOpen = (popupProps) => {
+    return{
+        type: 'POPUP_SHOW',
+        payload: popupProps
+    }
+}
+
+export const popupHide = () => {
+    return{
+        type: 'POPUP_HIDE'
+    }
+}

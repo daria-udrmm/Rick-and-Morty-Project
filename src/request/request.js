@@ -9,6 +9,7 @@ export const useHttp = () => {
             const data = await response.json();
         
             return data.results.map(item => {
+                console.log(item.origin.name);
                 return({
                     species: item.species,
                     title: item.name,
@@ -18,7 +19,9 @@ export const useHttp = () => {
                     gender: item.gender,
                     liked: false,
                     color: 'rgba(255, 255, 255, .5)',
-                    id: item.id
+                    id: item.id,
+                    created: `${new Date(Date.parse(item.created)).getFullYear()}.${new Date(Date.parse(item.created)).getMonth()}`,
+                    planet: item.origin.name
                 })
             })
         }

@@ -1,25 +1,23 @@
 import './PostItem.scss'
-import { heroesSetLike } from '../../actions';
 import { useDispatch } from 'react-redux';
 import 'normalize.css';
+import { popupOpen } from '../../actions';
 
 
-const PostItem = ({id, gender, status, name, title, species, image, link, color}) => {
+const PostItem = ({gender, planet, status, title, species, image, color, created}) => {
+    
     const dispatch = useDispatch();
+
+    const personObj = { gender, status, title, species, image, created, planet };
 
     return(
         <div className="social__post"
+            onClick={() => dispatch(popupOpen(personObj))}
             style={{backgroundColor: color}}>
             <div
                 className='social__title'>
                     {title}
             </div>
-            <div
-                className='social__content'>
-                    Species: {species}
-            </div>
-            <div>Status: {status}</div>
-            <div>Gender: {gender}</div>
             <img
                 className='social__image' 
                 src={image}>
