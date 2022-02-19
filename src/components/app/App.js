@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-import { fetchHeroes, activeFilterDelete} from '../../actions';
+import { fetchHeroes } from '../../actions';
 import { useDispatch, useSelector } from 'react-redux';
 import './App.scss';
 import 'normalize.css';
@@ -8,7 +8,7 @@ import Filters from '../filters/Filters';
 import Search from '../search/Search';
 import PostsList from '../postsList/PostsList';
 import Popup from '../popup/Popup';
-import DeleteFilters from '../deleteFilters/DeleteFiltes';
+import DeleteFilters from '../deleteFilters/DeleteFilters';
 
 
 const App = () => {
