@@ -21,8 +21,6 @@ const App = () => {
         dispatch(fetchHeroes(request));
     }, [])
 
-    console.log(popupInfo)
-
     return (
         <main className="app">
             <div className="container">

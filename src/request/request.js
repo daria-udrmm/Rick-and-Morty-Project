@@ -9,7 +9,6 @@ export const useHttp = () => {
             const data = await response.json();
         
             return data.results.map(item => {
-                console.log(item.origin.name);
                 return({
                     species: item.species,
                     title: item.name,
