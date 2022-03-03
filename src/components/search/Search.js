@@ -16,7 +16,6 @@ const Search = () => {
         e.preventDefault();
         dispatch(activeFilteredChange(({title: text})));
     }
-    
 
     useEffect(() => {
         setText('');

@@ -22,6 +22,7 @@ const App = () => {
         dispatch(fetchHeroes(request));
     }, []);
 
+
     return (
         <main className="app">
             <div className="container">
