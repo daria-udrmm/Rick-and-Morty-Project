@@ -44,3 +44,9 @@
         line-height: 150%;
     }
 }
+
+@media (max-width: 500px){
+    .social__box{
+        grid-template-columns: 1fr;
+    }
+}

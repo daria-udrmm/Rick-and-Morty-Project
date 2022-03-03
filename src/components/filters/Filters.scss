@@ -51,3 +51,10 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 500px){
+    .filters{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+}
